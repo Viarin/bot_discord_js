@@ -1,0 +1,13 @@
+{
+  "name": "root-workspace",
+  "private": true,
+  "scripts": {
+    "//": "--Commands--",
+    
+    "bot": "pnpm --filter @mybot/my-arch-bot dev",
+    "lavalink": "cd services/lavalink && docker compose up -d",
+    "stop": "cd services/lavalink && docker compose down",
+    
+    "dev": "pnpm lavalink && pnpm bot"
+  }
+}
