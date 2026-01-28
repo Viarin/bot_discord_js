@@ -1,6 +1,6 @@
 module.exports = {
     name: 'reset',
-    description: 'Restarts the player (!reset або !reset save)',
+    description: 'Restarts the player (!reset or !reset save)',
     async execute(message, args) {
         const queue = message.client.queue;
         const guildId = message.guild.id;
